@@ -1,3 +1,345 @@
-<!DOCTYPEhtml><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Tucumán Comercial | Conectando lo tuyo con nuestra gente</title><style>:root{--primario:#4f46e5;--primario-claro:#818cf8;--secundario:#06b6d4;--acento:#f59e0b;--exito:#10b981;--fondo-oscuro:#0f172a;--fondo-medio:#1e293b;--fondo-claro:#f8fafc;--texto-oscuro:#1e293b;--texto-claro:#94a3b8;--blanco:#fff;--borde:rgba(148,163,184,.2);--sombra-suave:0 4px 20px rgba(79,70,229,.15);--sombra-fuerte:0 20px 60px rgba(79,70,229,.25);--gradiente:linear-gradient(135deg,var(--primario) 0%,var(--secundario) 100%);--gradiente-calido:linear-gradient(135deg,var(--acento) 0%,#f97316 100%)}*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,'Segoe UI',system-ui,sans-serif}html{scroll-behavior:smooth}body{background:var(--fondo-claro);color:var(--texto-oscuro);line-height:1.6;overflow-x:hidden}a{text-decoration:none;color:inherit}button{border:none;font-weight:600;cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1)}input,textarea,select{width:100%;padding:14px 18px;border:2px solid var(--borde);border-radius:10px;font-size:15px;transition:all .3s ease;background:#fff}input:focus,textarea:focus,select:focus{outline:none;border-color:var(--primario);box-shadow:0 0 0 4px rgba(79,70,229,.1)}.contenedor{max-width:1280px;margin:0 auto;padding:0 24px}.oculto{display:none!important}nav{background:rgba(255,255,255,.85);backdrop-filter:blur(20px);position:fixed;top:0;left:0;width:100%;z-index:1000;border-bottom:1px solid var(--borde)}.nav-contenido{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;max-width:1280px;margin:0 auto}.logo{font-size:1.5rem;font-weight:800;background:var(--gradiente);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.nav-enlaces{display:flex;gap:32px;align-items:center}.nav-enlaces a{color:var(--texto-oscuro);font-weight:500;position:relative}.nav-enlaces a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--gradiente);transition:width .3s ease}.nav-enlaces a:hover::after{width:100%}.btn{padding:12px 24px;border-radius:10px;font-weight:600}.btn-primario{background:var(--gradiente);color:#fff;box-shadow:0 4px 15px rgba(79,70,229,.4)}.btn-primario:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(79,70,229,.5)}.btn-exito{background:var(--exito);color:#fff}.btn-exito:hover{background:#059669;transform:translateY(-2px)}.btn-outline{border:2px solid var(--primario);color:var(--primario);background:0 0}.btn-outline:hover{background:var(--primario);color:#fff}.btn-calido{background:var(--gradiente-calido);color:#fff}.btn-calido:hover{transform:translateY(-2px)}.menu-movil{display:none;font-size:1.8rem;cursor:pointer}@media(max-width:768px){.nav-enlaces{position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:24px;gap:20px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.1);border-radius:0 0 16px 16px}.nav-enlaces.activo{display:flex}.menu-movil{display:block}}section{padding-top:80px}.hero{background:linear-gradient(135deg,var(--fondo-oscuro) 0%,var(--fondo-medio) 100%);color:#fff;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 24px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(79,70,229,.15) 0%,transparent 50%),radial-gradient(circle at 70% 80%,rgba(6,182,212,.1) 0%,transparent 50%);animation:flotar 20s infinite linear}@keyframes flotar{0%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}100%{transform:translate(0,0)}}.hero-contenido{position:relative;z-index:1;max-width:900px}.etiqueta{display:inline-block;padding:8px 20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50px;font-size:.9rem;margin-bottom:24px;color:var(--primario-claro)}.hero h1{font-size:clamp(2.5rem,6vw,4rem);line-height:1.1;margin-bottom:24px}.hero h1 span{background:var(--gradiente);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero p{font-size:clamp(1rem,2vw,1.25rem);color:#cbd5e1;max-width:700px;margin:0 auto 40px;line-height:1.7}.hero-botones{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}.estadisticas{display:flex;gap:40px;justify-content:center;flex-wrap:wrap}.dato{text-align:center}.dato strong{display:block;font-size:2rem;font-weight:800;color:#fff}.dato span{color:var(--texto-claro);font-size:.9rem}@media(max-width:768px){.estadisticas{gap:24px}.estadisticas .dato strong{font-size:1.5rem}}.porque{padding:80px 24px;background:var(--fondo-claro)}.seccion-titulo{text-align:center;margin-bottom:60px}.seccion-titulo h2{font-size:2rem;margin-bottom:12px}.seccion-titulo p{color:var(--texto-claro);max-width:600px;margin:0 auto}.ventajas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.ventaja{background:#fff;padding:32px;border-radius:16px;box-shadow:var(--sombra-suave);border:1px solid var(--borde);transition:all .3s ease}.ventaja:hover{transform:translateY(-8px);box-shadow:var(--sombra-fuerte);border-color:var(--primario-claro)}.ventaja .icono{font-size:2.5rem;margin-bottom:16px}.ventaja h3{font-size:1.2rem;margin-bottom:10px}.ventaja p{color:var(--texto-claro);font-size:.95rem}.opciones-seccion{padding:80px 24px;background:#fff}.opciones-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:40px;max-width:900px;margin:0 auto}.opcion-card{padding:48px 36px;border-radius:20px;text-align:center;transition:all .4s ease;position:relative;overflow:hidden}.opcion-card:nth-child(1){background:linear-gradient(145deg,#eff6ff,#dbeafe);border:2px solid #bfdbfe}.opcion-card:nth-child(2){background:linear-gradient(145deg,#f0fdf4,#dcfce7);border:2px solid #bbf7d0}.opcion-card:hover{transform:translateY(-10px)scale(1.02)}.opcion-card .icono{font-size:3.5rem;margin-bottom:20px}.opcion-card h3{font-size:1.5rem;margin-bottom:12px}.opcion-card p{color:#4b5563;margin-bottom:24px;line-height:1.6}.buscador{max-width:600px;margin:40px auto;padding:0 24px}.grilla-productos{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px;padding:24px;max-width:1280px;margin:0 auto}.tarjeta-item{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sombra-suave);transition:all .3s ease;border:1px solid transparent}.tarjeta-item:hover{transform:translateY(-6px);box-shadow:var(--sombra-fuerte);border-color:var(--primario-claro)}.item-img{height:200px;background:linear-gradient(135deg,#e0e7ff,#c7d2fe);display:flex;align-items:center;justify-content:center;font-size:3.5rem}.item-cuerpo{padding:22px}.item-cuerpo h3{font-size:1.15rem;margin-bottom:8px}.item-precio{font-size:1.5rem;font-weight:800;color:var(--exito);margin-bottom:12px}.item-vendedor{font-size:.9rem;color:var(--texto-claro);margin-bottom:12px}.item-contacto a{display:inline-block;padding:8px 16px;background:#dcfce7;color:#166534;border-radius:8px;font-size:.9rem;font-weight:500;transition:all .2s ease}.item-contacto a:hover{background:#bbf7d0}.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(15,23,42,.7);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:2000;opacity:0;visibility:hidden;transition:all .3s ease}.modal.activo{opacity:1;visibility:visible}.modal-contenido{background:#fff;padding:40px;border-radius:20px;width:90%;max-width:460px;max-height:90vh;overflow-y:auto;position:relative;box-shadow:var(--sombra-fuerte);animation:aparecer .4s ease}@keyframes aparecer{from{opacity:0;transform:translateY(30px)scale(.95)}to{opacity:1;transform:translateY(0)scale(1)}}.modal-contenido h2{text-align:center;margin-bottom:28px;font-size:1.5rem;color:var(--primario)}.campo{margin-bottom:20px}.campo label{display:block;margin-bottom:8px;font-weight:500;color:var(--texto-oscuro)}.fila-doble{display:grid;grid-template-columns:1fr 1fr;gap:16px}.cerrar{position:absolute;top:16px;right:20px;font-size:1.5rem;cursor:pointer;color:var(--texto-claro);transition:color .2s}.cerrar:hover{color:var(--texto-oscuro)}.mensaje{padding:14px;border-radius:10px;margin-bottom:16px;display:none}.mensaje.exito{background:#dcfce7;color:#166534;border:1px solid #bbf7d0;display:block}.mensaje.error{background:#fee2e2;color:#991b1b;border:1px solid #fecaca;display:block}.enlace-form{text-align:center;margin-top:16px;font-size:14px;color:var(--primario);cursor:pointer}.enlace-form:hover{text-decoration:underline}.panel{max-width:900px;margin:40px auto;padding:0 24px}.panel-cabecera{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;flex-wrap:wrap;gap:16px}.tarjeta-form{background:#fff;padding:32px;border-radius:16px;box-shadow:var(--sombra-suave);margin-bottom:32px}.tarjeta-producto{background:#fff;border-radius:12px;padding:20px;box-shadow:var(--sombra-suave);margin-bottom:16px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}.producto-imagen{width:80px;height:80px;background:var(--fondo-claro);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.8rem}.producto-info{flex:1;min-width:200px}.etiqueta-estado{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.8rem;background:#dbeafe;color:#1e40af;font-weight:500}footer{background:var(--fondo-oscuro);color:#fff;text-align:center;padding:60px 24px;margin-top:80px}footer p{opacity:.7;font-size:.9rem}@media(max-width:640px){.fila-doble{grid-template-columns:1fr}.tarjeta-producto{justify-content:center;text-align:center}}button[type=submit]{width:100%;padding:14px;font-size:16px;margin-top:10px}.btn-chico{padding:8px 16px;font-size:14px}}</style></head><body><nav><div class="nav-contenido"><a href="#" class="logo" onclick="mostrarSeccion('inicio')">🏪 Tucumán Comercial</a><div class="menu-movil" onclick="toggleMenu()">☰</div><div class="nav-enlaces" id="menuPrincipal"><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a><a href="#" onclick="mostrarSeccion('clientes')">Comprar</a><a href="#" onclick="mostrarSeccion('anunciantes')">Vender</a><span id="zonaUsuario"></span></div></div></nav><section id="seccion-inicio"><div class="hero"><div class="hero-contenido"><span class="etiqueta">🚀 La vidriera digital de nuestra provincia</span><h1>Tu negocio, <span>frente a miles</span> de tucumanenses todos los días</h1><p>Olvidá pagar fortunas en publicidad que no llega a tu gente. Aquí tu tienda aparece justo donde están tus vecinos. Simple, local y efectivo.<br><strong>¡Tu primera publicación es GRATIS!</strong></p><div class="hero-botones"><button class="btn btn-exito" onclick="mostrarSeccion('anunciantes')">📢 PUBLICAR MI NEGOCIO →</button><button class="btn btn-outline" style="border-color:rgba(255,255,255,.3);color:#fff" onclick="mostrarSeccion('clientes')">🛒 Explorar Productos</button></div><div class="estadisticas"><div class="dato"><strong>100%</strong><span>Local y de confianza</span></div><div class="dato"><strong>0</strong><span>Comisiones por venta</span></div><div class="dato"><strong>Sin límites</strong><span>de alcance en Tucumán</span></div></div></div></div><div class="porque"><div class="contenedor"><div class="seccion-titulo"><h2>¿Por qué sumarte?</h2><p>Construimos el único espacio dedicado exclusivamente a los comercios de nuestra provincia</p></div><div class="ventajas"><div class="ventaja"><div class="icono">🎯</div><h3>Llegás a tu gente</h3><p>Solo personas de Tucumán ven tus productos. Sin desperdiciar dinero en publicidad que llega a gente de otras provincias.</p></div><div class="ventaja"><div class="icono">💰</div><h3>Costos accesibles</h3><p>Olvidá los precios abusivos de otras plataformas. Tarifas pensadas para comercios como el tuyo.</p></div><div class="ventaja"><div class="icono">🤝</div><h3>Comunidad real</h3><p>Vecinos apoyando vecinos. Eso genera confianza que ninguna gran plataforma puede igualar.</p></div><div class="ventaja"><div class="icono">⚡</div><h3>Publicás en minutos</h3><p>Sin contratos ni complicaciones. Subís tu producto y ya está. Así de simple.</p></div></div></div></div><div class="opciones-seccion"><div class="seccion-titulo"><h2>¿Qué querés hacer hoy?</h2><p>Elegí tu camino</p></div><div class="opciones-grid"><div class="opcion-card"><div class="icono">🛍️</div><h3>Buscar Productos</h3><p>Encontrá lo que necesitás, cerca de casa, apoyando comercios tucumanenses. Calidad, cercanía y confianza.</p><button class="btn btn-primario" onclick="mostrarSeccion('clientes')">Ver Productos →</button></div><div class="opcion-card"><div class="icono">📢</div><h3>Publicar mi Negocio</h3><p>Tu vidriera abierta las 24 horas. Llegá a nuevos clientes sin moverte de tu local. ¡Empezá ahora mismo!</p><button class="btn btn-exito" onclick="mostrarSeccion('anunciantes')">Publicar Ahora →</button></div></div></div></section><section id="seccion-clientes" class="oculto"><div class="contenedor" style="margin-top:40px;text-align:center"><h2>🛒 Productos Disponibles en Tucumán</h2><p style="color:var(--texto-claro);margin-bottom:20px">Apoyá lo local. Comprá en tu zona.</p></div><div class="buscador"><input type="text" id="buscarProducto" placeholder="🔍 Buscar productos, comercios o categorías..." oninput="filtrarProductos()"></div><div class="grilla-productos" id="grillaProductos"><p style="grid-column:1/-1;text-align:center;color:var(--texto-claro);padding:60px;font-size:1.1rem">Todavía no hay productos publicados.<br><strong>Sé el primero en mostrar lo que hacés</strong> y llegá a miles de tucumanenses. <button class="btn btn-exito btn-chico" style="margin-top:16px" onclick="mostrarSeccion('anunciantes')">📢 Publicar mi negocio</button></p></div></section><section id="seccion-anunciantes" class="oculto"><div class="panel" id="panelAnuncianteAnonimo" style="text-align:center;margin-top:60px"><h2>📢 Área de Anunciantes</h2><p style="color:var(--texto-claro);margin-bottom:30px">Crea tu cuenta gratis y empieza a vender hoy mismo. Sin comisiones ocultas.</p><div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap"><button class="btn btn-primario" onclick="abrirModal('loginModal')">🔑 Iniciar Sesión</button><button class="btn btn-exito" onclick="abrirModal('registroModal')">📝 Registrarme Gratis</button></div></div><div class="oculto" id="panelAnunciante"><div class="panel-cabecera"><h2>👋 ¡Hola, <span id="nombreAnunciante">Comerciante</span>!</h2><div><button class="btn btn-outline btn-chico" onclick="cerrarSesion()">🚪 Cerrar Sesión</button></div></div><div class="tarjeta-form"><h3 style="margin-bottom:20px">➕ Publicar Nuevo Producto</h3><form id="formProducto" onsubmit="agregarProducto(event)"><div class="fila-doble"><div class="campo"><label>Nombre del producto *</label><input type="text" id="prodNombre" required placeholder="Ej: Pan artesanal, Servicio de plomería..."></div><div class="campo"><label>Precio *</label><input type="text" id="prodPrecio" required placeholder="$ Ej: 5.000"></div></div><div class="campo"><label>Descripción</label><textarea id="prodDescripcion" rows="3" placeholder="Detalles, características, horarios de atención..."></textarea></div><div class="fila-doble"><div class="campo"><label>Categoría</label><select id="prodCategoria"><option value="todos">General</option><option value="comida">Comida y Bebida</option><option value="servicios">Servicios</option><option value="tecnologia">Tecnología</option><option value="hogar">Hogar</option><option value="otros">Otros</option></select></div><div class="campo"><label>Imagen (emoji o URL)</label><input type="text" id="prodImagen" placeholder="📦 o pega una URL de imagen"></div></div><button type="submit" class="btn btn-exito">✅ Publicar Mi Producto</button></form></div><h3 style="margin-bottom:15px">📋 Mis Publicaciones</h3><div id="listaMisProductos"><p style="text-align:center;color:var(--texto-claro);padding:40px">Aún no tenés productos publicados. ¡Publicá el primero arriba!</p></div></div></section><footer><p>🏪 Tucumán Comercial — Conectando a los mejores comercios con nuestra gente</p><p style="margin-top:10px;font-size:.9rem;opacity:.7">© 2026 — Espacio de difusión, no somos vendedores. Tu primera publicación gratis.</p></footer><div class="modal" id="loginModal"><div class="modal-contenido"><span class="cerrar" onclick="cerrarModal('loginModal')">&times;</span><h2>🔑 Iniciar Sesión</h2><div class="mensaje" id="loginMensaje"></div><form id="formLogin" onsubmit="iniciarSesion(event)"><div class="campo"><label>📧 Correo o WhatsApp</label><input type="text" id="loginCorreo" required placeholder="tu@email.com o +54 9..."></div><div class="campo"><label>🔒 Contraseña</label><input type="password" id="loginClave" required placeholder="Tu contraseña"></div><button type="button" class="enlace-form" onclick="abrirModal('recuperarModal');cerrarModal('loginModal')">¿Olvidaste tu contraseña?</button><button type="submit" class="btn btn-primario">Ingresar</button></form><button class="enlace-form" onclick="abrirModal('registroModal');cerrarModal('loginModal')">¿No tenés cuenta? Crear una</button></div></div><div class="modal" id="registroModal"><div class="modal-contenido"><span class="cerrar" onclick="cerrarModal('registroModal')">&times;</span><h2>📝 Crear tu Cuenta Gratis</h2><div class="mensaje" id="registroMensaje"></div><form id="formRegistro" onsubmit="registrarUsuario(event)"><div class="campo"><label>🏪 Nombre de tu negocio *</label><input type="text" id="regNombre" required placeholder="Ej: Panadería San José"></div><div class="campo"><label>📧 Correo electrónico *</label><input type="email" id="regCorreo" required placeholder="tu@email.com"></div><div class="campo"><label>📱 WhatsApp *</label><input type="text" id="regWhatsapp" required placeholder="+54 9 381 123-4567"></div><div class="campo"><label>🔒 Contraseña *</label><input type="password" id="regClave" required placeholder="Mínimo 6 caracteres"></div><div class="campo"><label>🔒 Repetir contraseña *</label><input type="password" id="regClave2" required placeholder="Escribila de nuevo"></div><button type="submit" class="btn btn-exito">Registrarme Gratis</button></form><button class="enlace-form" onclick="abrirModal('loginModal');cerrarModal('registroModal')">¿Ya tenés cuenta? Iniciar sesión</button></div></div><div class="modal" id="recuperarModal"><div class="modal-contenido"><span class="cerrar" onclick="cerrarModal('recuperarModal')">&times;</span><h2>🔑 Recuperar Cuenta</h2><div class="mensaje" id="recuperarMensaje"></div><p style="margin-bottom:20px;color:var(--texto-claro);font-size:.95rem">Ingresá tu correo. Simularemos el envío de un enlace para crear una nueva contraseña.</p><form id="formRecuperar" onsubmit="enviarRecuperacion(event)"><div class="campo"><label>📧 Tu correo electrónico</label><input type="email" id="recuCorreo" required placeholder="tu@email.com"></div><button type="submit" class="btn btn-primario">Enviar Enlace</button></form><button class="enlace-form" onclick="abrirModal('loginModal');cerrarModal('recuperarModal')">Volver a Iniciar Sesión</button></div></div><script>let usuarioActivo=null,productos=[],emojis=['📦','👕','🍞','🔧','📱','🛋️','💡','🎁','🧰','🛍️'];function toggleMenu(){document.getElementById('menuPrincipal').classList.toggle('activo')}function mostrarSeccion(nombre){document.querySelectorAll('section').forEach(s=>s.classList.add('oculto'));document.getElementById(`seccion-${nombre}`).classList.remove('oculto');document.getElementById('menuPrincipal').classList.remove('activo')}function abrirModal(id){document.getElementById(id).classList.add('activo');document.body.style.overflow='hidden'}function cerrarModal(id){document.getElementById(id).classList.remove('activo');document.body.style.overflow='auto';document.getElementById(id).querySelectorAll('.mensaje').forEach(m=>{m.classList.remove('exito','error');m.innerHTML=''})}function registrarUsuario(e){e.preventDefault();const n=document.getElementById('regNombre').value,c=document.getElementById('regCorreo').value,w=document.getElementById('regWhatsapp').value,p1=document.getElementById('regClave').value,p2=document.getElementById('regClave2').value,m=document.getElementById('registroMensaje');if(p1.length<6){m.className='mensaje error';m.textContent='⚠️ La contraseña debe tener al menos 6 caracteres';return}if(p1!==p2){m.className='mensaje error';m.textContent='⚠️ Las contraseñas no coinciden';return}const u={nombre:n,correo:c,whatsapp:w,clave:p1};localStorage.setItem(`usuario-${c}`,JSON.stringify(u));m.className='mensaje exito';m.innerHTML='✅ ¡Cuenta creada con éxito! <br>Redirigiendo...';setTimeout(()=>{cerrarModal('registroModal');iniciarSesionDirecto(u)},1500)}function iniciarSesion(e){e.preventDefault();const c=document.getElementById('loginCorreo').value,p=document.getElementById('loginClave').value,m=document.getElementById('loginMensaje');const guardado=localStorage.getItem(`usuario-${c}`);if(!guardado){m.className='mensaje error';m.textContent='⚠️ No existe una cuenta con estos datos';return}const u=JSON.parse(guardado);if(u.clave!==p){m.className='mensaje error';m.textContent='⚠️ Contraseña incorrecta';return}cerrarModal('loginModal');iniciarSesionDirecto(u)}function iniciarSesionDirecto(u){usuarioActivo=u;localStorage.setItem('sesionActiva',JSON.stringify(u));document.getElementById('nombreAnunciante').textContent=u.nombre;document.getElementById('panelAnuncianteAnonimo').classList.add('oculto');document.getElementById('panelAnunciante').classList.remove('oculto');document.getElementById('zonaUsuario').innerHTML=`Bienvenido, ${u.nombre}`;cargarMisProductos();actualizarGrillaPublica()}function cerrarSesion(){usuarioActivo=null;localStorage.removeItem('sesionActiva');document.getElementById('panelAnunciante').classList.add('oculto');document.getElementById('panelAnuncianteAnonimo').classList.remove('oculto');document.getElementById('zonaUsuario').innerHTML='';mostrarSeccion('inicio')}function enviarRecuperacion(e){e.preventDefault();const c=document.getElementById('recuCorreo').value,m=document.getElementById('recuperarMensaje');m.className='mensaje exito';m.innerHTML=`✅ Simulación completa<br>Se envió un enlace de recuperación a: <strong>${c}</strong><br>(En una versión real, aquí se enviaría un correo de verdad)`;document.getElementById('formRecuperar').reset()}function agregarProducto(e){e.preventDefault();if(!usuarioActivo){abrirModal('loginModal');return}const n=document.getElementById('prodNombre').value,p=document.getElementById('prodPrecio').value,d=document.getElementById('prodDescripcion').value,c=document.getElementById('prodCategoria').value,i=document.getElementById('prodImagen').value||emojis[Math.floor(Math.random()*emojis.length)];const prod={id:Date.now(),nombre:n,precio:p,descripcion:d,categoria:c,imagen:i,vendedor:usuarioActivo.nombre,contacto:usuarioActivo.whatsapp,correo:usuarioActivo.correo,fecha:new Date().toLocaleDateString('es-AR')};productos.unshift(prod);guardarProductos();document.getElementById('formProducto').reset();cargarMisProductos();actualizarGrillaPublica()}function guardarProductos(){localStorage.setItem('productos',JSON.stringify(productos))}function cargarProductosGuardados(){const g=localStorage.getItem('productos');if(g)productos=JSON.parse(g)}function cargarMisProductos(){const lista=document.getElementById('listaMisProductos');const mis=productos.filter(x=>x.vendedor===usuarioActivo.nombre);if(mis.length===0){lista.innerHTML='<p style="text-align:center;color:var(--texto-claro);padding:40px">Aún no tenés productos publicados.<br>¡Publicá el primero arriba!</p>';return}lista.innerHTML=mis.map(x=>`<div class="tarjeta-producto"><div class="producto-imagen">${x.imagen}</div><div class="producto-info"><h4>${x.nombre}</h4><span class="precio">${x.precio}</span><p style="font-size:.9rem;color:var(--texto-claro);margin-top:5px">${x.fecha}</p><button class="btn btn-rojo btn-chico" onclick="eliminarProducto(${x.id})">🗑️ Eliminar</button></div></div>`).join('')}function eliminarProducto(id){if(confirm('¿Eliminar este producto?')){productos=productos.filter(x=>x.id!==id);guardarProductos();cargarMisProductos();actualizarGrillaPublica()}}function actualizarGrillaPublica(){const grilla=document.getElementById('grillaProductos');if(productos.length===0){grilla.innerHTML=`<p style="grid-column:1/-1;text-align:center;color:var(--texto-claro);padding:60px;font-size:1.1rem">Todavía no hay productos publicados.<br><strong>Sé el primero en mostrar lo que hacés</strong> y llegá a miles de tucumanenses. <button class="btn btn-exito btn-chico" style="margin-top:16px" onclick="mostrarSeccion('anunciantes')">📢 Publicar mi negocio</button></p>`;return}grilla.innerHTML=productos.map(x=>`<div class="tarjeta-item"><div class="item-img">${x.imagen}</div><div class="item-cuerpo"><h3>${x.nombre}</h3><p class="item-precio">${x.precio}</p><p class="item-vendedor">🏪 ${x.vendedor}</p>${x.descripcion?`<p style="font-size:.9rem;color:var(--texto-claro);margin-bottom:10px">${x.descripcion.substring(0,60)}...</p>`:''}<div class="item-contacto"><a href="https://wa.me/${x.contacto.replace(/\D/g,'')}" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a></div></div></div>`).join('')}function filtrarProductos(){const t=document.getElementById('buscarProducto').value.toLowerCase();const f=productos.filter(x=>x.nombre.toLowerCase().includes(t)||x.descripcion?.toLowerCase().includes(t)||x.categoria.includes(t));const grilla=document.getElementById('grillaProductos');if(f.length===0){grilla.innerHTML='<p style="grid-column:1/-1;text-align:center;color:var(--texto-claro);padding:60px">No se encontraron productos</p>';return}grilla.innerHTML=f.map(x=>`<div class="tarjeta-item"><div class="item-img">${x.imagen}</div><div class="item-cuerpo"><h3>${x.nombre}</h3><p class="item-precio">${x.precio}</p><p class="item-vendedor">🏪 ${x.vendedor}</p>${x.descripcion?`<p style="font-size:.9rem;color:var(--texto-claro);margin-bottom:10px">${x.descripcion.substring(0,60)}...</p>`:''}<div class="item-contacto"><a href="https://wa.me/${x.contacto.replace(/\D/g,'')}" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a></div></div></div>`).join('')}window.onload=()=>{cargarProductosGuardados();actualizarGrillaPublica();const sesion=localStorage.getItem('sesionActiva');if(sesion){iniciarSesionDirecto(JSON.parse(sesion))}}};</script></body></html>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Tucumán Comercial</title><style>:root{--primario:#2563eb;--primario-oscuro:#1d4ed8;--exito:#16a34a;--exito-oscuro:#15803d;--advertencia:#ca8a04;--error:#dc2626;--fondo:#0f172a;--fondo-claro:#1e293b;--fondo-tarjeta:#334155;--texto:#f8fafc;--texto-claro:#94a3b8;--borde:#475569;--sombra:0 4px 6px -1px rgba(0,0,0,.3)}*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}body{background-color:var(--fondo);color:var(--texto);line-height:1.6;min-height:100vh}a{text-decoration:none;color:inherit}.cabecera{background:linear-gradient(135deg,var(--primario),var(--primario-oscuro));padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:var(--sombra)}.logo{display:flex;align-items:center;gap:.75rem;font-size:1.4rem;font-weight:700}.logo-icono{font-size:1.8rem}.navegacion-principal{display:flex;gap:1.5rem;align-items:center}.nav-link{padding:.5rem 1rem;border-radius:6px;transition:background .2s;cursor:pointer}.nav-link:hover{background:rgba(255,255,255,.15)}.btn{padding:.6rem 1.2rem;border:none;border-radius:6px;font-weight:600;cursor:pointer;transition:transform .15s,background .2s;font-size:.95rem}.btn:active{transform:scale(.98)}.btn-primario{background:var(--primario);color:#fff}.btn-primario:hover{background:var(--primario-oscuro)}.btn-exito{background:var(--exito);color:#fff}.btn-exito:hover{background:var(--exito-oscuro)}.btn-rojo{background:var(--error);color:#fff}.btn-chico{padding:.35rem .7rem;font-size:.85rem}.boton-menu{display:none;background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer}.menu-movil{position:fixed;top:0;right:0;height:100vh;width:280px;background:var(--fondo-claro);z-index:200;padding:2rem;transform:translateX(100%);transition:transform .3s ease;box-shadow:-4px 0 10px rgba(0,0,0,.3)}.menu-movil.activo{transform:translateX(0)}.cerrar-menu{position:absolute;top:1rem;right:1rem;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}.menu-movil nav{margin-top:2rem;display:flex;flex-direction:column;gap:1rem}.menu-movil .nav-link{padding:.8rem}.seccion{padding:3rem 1.5rem;max-width:1200px;margin:0 auto}.seccion.oculto{display:none}.hero{text-align:center;padding:4rem 1.5rem;max-width:900px;margin:0 auto}.hero h1{font-size:clamp(2rem,6vw,3.8rem);line-height:1.2;margin-bottom:1.5rem}.hero h1 span{color:var(--primario)}.hero p{font-size:1.15rem;color:var(--texto-claro);margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto}.etiqueta{display:inline-block;background:rgba(37,99,235,.2);color:#93c5fd;padding:.5rem 1rem;border-radius:20px;font-size:.9rem;margin-bottom:1.5rem}.acciones-centradas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}.buscador{display:flex;gap:.5rem;max-width:600px;margin:0 auto 2rem}.buscador input{flex:1;padding:.9rem 1.2rem;border-radius:8px;border:1px solid var(--borde);background:var(--fondo-claro);color:var(--texto);font-size:1rem}.grilla-productos{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}.tarjeta-item{background:var(--fondo-claro);border-radius:10px;overflow:hidden;border:1px solid var(--borde);transition:transform .2s,box-shadow .2s}.tarjeta-item:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,.25)}.item-img{font-size:3.5rem;text-align:center;padding:1.5rem;background:var(--fondo-tarjeta)}.item-cuerpo{padding:1.2rem}.item-cuerpo h3{font-size:1.1rem;margin-bottom:.5rem}.item-precio{font-size:1.3rem;font-weight:700;color:var(--exito);margin-bottom:.5rem}.item-vendedor{font-size:.9rem;color:var(--texto-claro);margin-bottom:.8rem}.item-contacto a{display:block;width:100%;text-align:center;padding:.6rem;background:#25d366;color:#fff;border-radius:6px;font-weight:600;transition:background .2s}.item-contacto a:hover{background:#128c46}.form-contenedor{max-width:550px;margin:0 auto;background:var(--fondo-claro);padding:2rem;border-radius:10px;border:1px solid var(--borde)}.form-grupo{margin-bottom:1.2rem}.form-grupo label{display:block;margin-bottom:.5rem;font-weight:500}.form-grupo input,.form-grupo textarea,.form-grupo select{width:100%;padding:.85rem 1rem;border-radius:6px;border:1px solid var(--borde);background:var(--fondo);color:var(--texto);font-size:.95rem}.form-grupo textarea{min-height:100px;resize:vertical}.form-grupo input:focus,.form-grupo textarea:focus,.form-grupo select:focus{outline:none;border-color:var(--primario)}.panel-anunciante{background:var(--fondo-claro);padding:1.5rem;border-radius:10px;margin-bottom:2rem;border:1px solid var(--borde)}.panel-anunciante.oculto{display:none}.cabecera-panel{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem}.tarjeta-producto{display:flex;align-items:center;gap:1rem;background:var(--fondo-tarjeta);padding:1rem;border-radius:8px;margin-bottom:.8rem}.producto-imagen{font-size:2rem}.producto-info{flex:1}.producto-info h4{font-size:1rem;margin-bottom:.25rem}.precio{font-weight:600;color:var(--exito)}.modal-fondo{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);display:flex;justify-content:center;align-items:center;z-index:300;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;padding:1rem}.modal-fondo.activo{opacity:1;visibility:visible}.modal-contenido{background:var(--fondo-claro);padding:2rem;border-radius:10px;border:1px solid var(--borde);width:100%;max-width:420px;max-height:90vh;overflow-y:auto}.modal-contenido h3{margin-bottom:1.5rem;text-align:center}.cerrar-modal{float:right;background:none;border:none;color:var(--texto-claro);font-size:1.3rem;cursor:pointer;margin-top:-.5rem}.mensaje{margin-top:1rem;padding:.75rem;border-radius:6px;text-align:center;font-size:.9rem}.mensaje.exito{background:rgba(22,163,74,.15);color:#86efac}.mensaje.error{background:rgba(220,38,38,.15);color:#fca5a5}.enlace-texto{color:var(--primario);cursor:pointer;font-size:.9rem;display:inline-block;margin-top:.5rem}.enlace-texto:hover{text-decoration:underline}.zona-usuario{font-size:.9rem;color:var(--texto-claro)}.pie{text-align:center;padding:2rem;color:var(--texto-claro);font-size:.9rem;border-top:1px solid var(--borde);margin-top:3rem}@media(max-width:768px){.navegacion-principal{display:none}.boton-menu{display:block}.cabecera{padding:1rem}.seccion{padding:2rem 1rem}.hero{padding:2rem 1rem}.buscador{flex-direction:column}.acciones-centradas{flex-direction:column}.btn{width:100%}}</style></head><body><script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script><script>const firebaseConfig={apiKey:"AIzaSyAwiNprckC4ERxXsdyYpzqHd3ci-MVE2oA",authDomain:"tucuman-comercial.firebaseapp.com",projectId:"tucuman-comercial",storageBucket:"tucuman-comercial.firebasestorage.app",messagingSenderId:"977926938406",appId:"1:977926938406:web:a6f3e0f881b8005608abe7"};const app=firebase.initializeApp(firebaseConfig);const db=firebase.firestore();</script><header class="cabecera"><div class="logo"><span class="logo-icono">🏪</span><span>Tucumán Comercial</span></div><nav class="navegacion-principal"><span class="nav-link"onclick="mostrarSeccion('inicio')">Inicio</span><span class="nav-link"onclick="mostrarSeccion('productos')">Ver Productos</span><span class="nav-link"onclick="mostrarSeccion('anunciantes')">Publicar Mi Negocio</span><span id="zonaUsuario"class="zona-usuario"></span><button id="btnSesion"class="btn btn-primario"onclick="abrirModal('loginModal')">Ingresar</button></nav><button class="boton-menu"onclick="toggleMenu()">☰</button></header><div id="menuPrincipal"class="menu-movil"><button class="cerrar-menu"onclick="toggleMenu()">✕</button><nav><span class="nav-link"onclick="mostrarSeccion('inicio');toggleMenu()">Inicio</span><span class="nav-link"onclick="mostrarSeccion('productos');toggleMenu()">Ver Productos</span><span class="nav-link"onclick="mostrarSeccion('anunciantes');toggleMenu()">Publicar Mi Negocio</span><span id="zonaUsuarioMovil"class="zona-usuario"></span><button id="btnSesionMovil"class="btn btn-primario"style="width:100%;margin-top:1rem"onclick="abrirModal('loginModal');toggleMenu()">Ingresar</button></nav></div><section id="seccion-inicio"class="seccion"><div class="hero"><span class="etiqueta">🚀 La vidriera digital de nuestra provincia</span><h1>Tu negocio,<span>frente a miles de</span><br>tucumanenses todos los días</h1><p>Olvidá pagar fortunas en publicidad que no llega a gente. Aquí tu tienda aparece justo donde están tus vecinos. Simple, local y efectivo.<br><br><strong>¡Tu primera publicación es GRATIS!</strong></p><div class="acciones-centradas"><button class="btn btn-exito"onclick="mostrarSeccion('productos')">🛍️ Ver lo que ofrece Tucumán</button><button class="btn btn-primario"onclick="mostrarSeccion('anunciantes')">📢 Publicar mi negocio</button></div></div></section><section id="seccion-productos"class="seccion oculto"><h2 style="text-align:center;margin-bottom:1.5rem">🛍️ Productos y Servicios de Tucumán</h2><div class="buscador"><input type="text"id="buscarProducto"placeholder="🔍 Buscar productos, rubros o negocios..."oninput="filtrarProductos()"><button class="btn btn-primario"onclick="filtrarProductos()">Buscar</button></div><div id="grillaProductos"class="grilla-productos"></div></section><section id="seccion-anunciantes"class="seccion oculto"><h2 style="text-align:center;margin-bottom:1.5rem">📢 Publicá tu negocio</h2><div id="panelAnuncianteAnonimo"class="panel-anunciante"><h3>👋 ¡Hola! ¿Tenés algo para ofrecer?</h3><p style="margin:.5rem 0 1rem">Publicar es muy sencillo y tu primer producto es completamente gratis. Iniciá sesión o registrate ahora mismo.</p><div class="acciones-centradas"><button class="btn btn-exito"onclick="abrirModal('registroModal')">📝 Crear mi cuenta</button><button class="btn btn-primario"onclick="abrirModal('loginModal')">🔑 Ya tengo cuenta</button></div></div><div id="panelAnunciante"class="panel-anunciante oculto"><div class="cabecera-panel"><h3>✅ Bienvenido, <span id="nombreAnunciante"></span></h3><span class="zona-usuario"><button class="btn btn-chico btn-rojo"onclick="cerrarSesion()">Cerrar sesión</button></span></div><div class="form-contenedor"><h4 style="margin-bottom:1rem">➕ Publicar nuevo producto</h4><form id="formProducto"><div class="form-grupo"><label>Nombre del producto / servicio *</label><input type="text"id="prodNombre"required placeholder="Ej: Pan artesanal, Servicio de plomería..."></div><div class="form-grupo"><label>Precio *</label><input type="text"id="prodPrecio"required placeholder="Ej: $15.000 o Consultar"></div><div class="form-grupo"><label>Breve descripción</label><textarea id="prodDescripcion"placeholder="Detalles, horarios, zona de entrega..."></textarea></div><div class="form-grupo"><label>Categoría</label><select id="prodCategoria"><option value="General">General</option><option value="Comida y Bebida">🍕 Comida y Bebida</option><option value="Servicios">🔧 Servicios</option><option value="Ropa y Calzado">👕 Ropa y Calzado</option><option value="Tecnología">📱 Tecnología</option><option value="Hogar">🛋️ Hogar</option><option value="Otros">📦 Otros</option></select></div><div class="form-grupo"><label>Enlace de imagen (opcional)</label><input type="url"id="prodImagen"placeholder="Pegá el enlace de una foto de tu producto"></div><button type="submit"class="btn btn-exito"style="width:100%;margin-top:.5rem">✅ Publicar mi producto</button></form></div><h4 style="margin:2rem 0 1rem">📋 Mis publicaciones</h4><div id="listaMisProductos"></div></div></section><div id="loginModal"class="modal-fondo"><div class="modal-contenido"><button class="cerrar-modal"onclick="cerrarModal('loginModal')">✕</button><h3>🔑 Iniciar Sesión</h3><form id="formLogin"><div class="form-grupo"><label>Correo electrónico</label><input type="email"id="loginCorreo"required></div><div class="form-grupo"><label>Contraseña</label><input type="password"id="loginClave"required></div><button type="submit"class="btn btn-primario"style="width:100%">Ingresar</button><div id="loginMensaje"class="mensaje"></div></form><p style="text-align:center;margin-top:1rem">¿Olvidaste tu contraseña?<br><span class="enlace-texto"onclick="cerrarModal('loginModal');abrirModal('recuperarModal')">Recuperar acceso</span></p><p style="text-align:center;margin-top:.5rem">¿No tenés cuenta?<br><span class="enlace-texto"onclick="cerrarModal('loginModal');abrirModal('registroModal')">Crear una cuenta nueva</span></p></div></div><div id="registroModal"class="modal-fondo"><div class="modal-contenido"><button class="cerrar-modal"onclick="cerrarModal('registroModal')">✕</button><h3>📝 Crear tu cuenta</h3><form id="formRegistro"><div class="form-grupo"><label>Tu nombre o nombre del negocio *</label><input type="text"id="regNombre"required></div><div class="form-grupo"><label>Correo electrónico *</label><input type="email"id="regCorreo"required></div><div class="form-grupo"><label>Whatsapp de contacto *</label><input type="tel"id="regWhatsapp"required placeholder="Ej: +54 9 381 123-4567"></div><div class="form-grupo"><label>Contraseña (mínimo 6 caracteres) *</label><input type="password"id="regClave"required></div><div class="form-grupo"><label>Repetir contraseña *</label><input type="password"id="regClave2"required></div><button type="submit"class="btn btn-exito"style="width:100%">Crear mi cuenta</button><div id="registroMensaje"class="mensaje"></div></form><p style="text-align:center;margin-top:1rem">¿Ya tenés cuenta?<br><span class="enlace-texto"onclick="cerrarModal('registroModal');abrirModal('loginModal')">Iniciar sesión</span></p></div></div><div id="recuperarModal"class="modal-fondo"><div class="modal-contenido"><button class="cerrar-modal"onclick="cerrarModal('recuperarModal')">✕</button><h3>🔄 Recuperar acceso</h3><form id="formRecuperar"><div class="form-grupo"><label>Correo electrónico con el que te registraste</label><input type="email"id="recuCorreo"required></div><button type="submit"class="btn btn-primario"style="width:100%">Enviar instrucciones</button><div id="recuperarMensaje"class="mensaje"></div></form><p style="text-align:center;margin-top:1rem"><span class="enlace-texto"onclick="cerrarModal('recuperarModal');abrirModal('loginModal')">Volver al inicio de sesión</span></p></div></div><footer class="pie"><p>🏪 Tucumán Comercial — La vidriera digital de nuestra provincia</p><p>Conectando vecinos y comercios desde el corazón de Tucumán ❤️</p></footer><script>let usuarioActualconst coleccionProductos = db.collection('productos');
 
+// ==================== FUNCIONES DE NAVEGACIÓN ====================
+function mostrarSeccion(nombre) {
+  document.querySelectorAll('.seccion').forEach(s => s.classList.add('oculto'));
+  document.getElementById(`seccion-${nombre}`).classList.remove('oculto');
+  if (nombre === 'productos') cargarProductos();
+  if (nombre === 'anunciantes') verificarSesion();
+}
+
+function toggleMenu() {
+  document.getElementById('menuPrincipal').classList.toggle('activo');
+}
+
+// ==================== MODALES ====================
+function abrirModal(id) {
+  document.getElementById(id).classList.add('activo');
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarModal(id) {
+  document.getElementById(id).classList.remove('activo');
+  document.body.style.overflow = '';
+  const form = document.getElementById(id).querySelector('form');
+  if (form) form.reset();
+  const mensaje = document.getElementById(id).querySelector('.mensaje');
+  if (mensaje) mensaje.innerHTML = '';
+}
+
+// Cerrar modal haciendo clic fuera
+document.querySelectorAll('.modal-fondo').forEach(modal => {
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.classList.remove('activo');
+    document.body.style.overflow = '';
+  });
+});
+
+// ==================== GESTIÓN DE USUARIOS ====================
+function verificarSesion() {
+  const panelAnonimo = document.getElementById('panelAnuncianteAnonimo');
+  const panelUsuario = document.getElementById('panelAnunciante');
   
+  if (usuarioActual) {
+    panelAnonimo.classList.add('oculto');
+    panelUsuario.classList.remove('oculto');
+    document.getElementById('nombreAnunciante').textContent = usuarioActual.nombre;
+    document.getElementById('btnSesion').textContent = usuarioActual.nombre.split(' ')[0];
+    document.getElementById('btnSesion').onclick = cerrarSesion;
+    document.getElementById('zonaUsuario').innerHTML = '';
+    document.getElementById('btnSesionMovil').textContent = 'Cerrar sesión';
+    document.getElementById('btnSesionMovil').onclick = cerrarSesion;
+    document.getElementById('zonaUsuarioMovil').innerHTML = '';
+    cargarMisProductos();
+  } else {
+    panelAnonimo.classList.remove('oculto');
+    panelUsuario.classList.add('oculto');
+    document.getElementById('btnSesion').textContent = 'Ingresar';
+    document.getElementById('btnSesion').onclick = () => abrirModal('loginModal');
+    document.getElementById('zonaUsuario').innerHTML = '';
+    document.getElementById('btnSesionMovil').textContent = 'Ingresar';
+    document.getElementById('btnSesionMovil').onclick = () => abrirModal('loginModal');
+    document.getElementById('zonaUsuarioMovil').innerHTML = '';
+  }
+}
+
+function guardarSesion(usuario) {
+  localStorage.setItem('usuarioTucuman', JSON.stringify(usuario));
+  usuarioActual = usuario;
+  verificarSesion();
+}
+
+function cerrarSesion() {
+  localStorage.removeItem('usuarioTucuman');
+  usuarioActual = null;
+  verificarSesion();
+  mostrarSeccion('inicio');
+}
+
+function recuperarSesion() {
+  const guardado = localStorage.getItem('usuarioTucuman');
+  if (guardado) {
+    usuarioActual = JSON.parse(guardado);
+    verificarSesion();
+  }
+}
+
+// ==================== FORMULARIO DE REGISTRO ====================
+document.getElementById('formRegistro').addEventListener('submit', async e => {
+  e.preventDefault();
+  const mensaje = document.getElementById('registroMensaje');
+  
+  const nombre = document.getElementById('regNombre').value.trim();
+  const correo = document.getElementById('regCorreo').value.trim().toLowerCase();
+  const whatsapp = document.getElementById('regWhatsapp').value.trim();
+  const clave = document.getElementById('regClave').value;
+  const clave2 = document.getElementById('regClave2').value;
+  
+  if (clave.length < 6) {
+    mensaje.className = 'mensaje error';
+    mensaje.textContent = '⚠️ La contraseña debe tener al menos 6 caracteres';
+    return;
+  }
+  
+  if (clave !== clave2) {
+    mensaje.className = 'mensaje error';
+    mensaje.textContent = '⚠️ Las contraseñas no coinciden';
+    return;
+  }
+  
+  // Verificar si ya existe
+  const snapshot = await db.collection('usuarios').where('correo', '==', correo).get();
+  if (!snapshot.empty) {
+    mensaje.className = 'mensaje error';
+    mensaje.textContent = '⚠️ Este correo ya está registrado. Iniciá sesión.';
+    return;
+  }
+  
+  const nuevoUsuario = { nombre, correo, whatsapp, clave, fecha: new Date() };
+  await db.collection('usuarios').add(nuevoUsuario);
+  
+  guardarSesion({ id: nuevoUsuario.id, nombre, correo, whatsapp });
+  mensaje.className = 'mensaje exito';
+  mensaje.textContent = '✅ ¡Cuenta creada con éxito! Redirigiendo...';
+  
+  setTimeout(() => cerrarModal('registroModal'), 1200);
+});
+
+// ==================== FORMULARIO DE LOGIN ====================
+document.getElementById('formLogin').addEventListener('submit', async e => {
+  e.preventDefault();
+  const mensaje = document.getElementById('loginMensaje');
+  
+  const correo = document.getElementById('loginCorreo').value.trim().toLowerCase();
+  const clave = document.getElementById('loginClave').value;
+  
+  const snapshot = await db.collection('usuarios').where('correo', '==', correo').get();
+  
+  if (snapshot.empty) {
+    mensaje.className = 'mensaje error';
+    mensaje.textContent = '⚠️ No encontramos una cuenta con ese correo';
+    return;
+  }
+  
+  let usuarioEncontrado = null;
+  snapshot.forEach(doc => {
+    const datos = doc.data();
+    if (datos.clave === clave) {
+      usuarioEncontrado = { id: doc.id, ...datos };
+    }
+  });
+  
+  if (!usuarioEncontrado) {
+    mensaje.className = 'mensaje error';
+    mensaje.textContent = '⚠️ Contraseña incorrecta';
+    return;
+  }
+  
+  guardarSesion({
+    id: usuarioEncontrado.id,
+    nombre: usuarioEncontrado.nombre,
+    correo: usuarioEncontrado.correo,
+    whatsapp: usuarioEncontrado.whatsapp
+  });
+  
+  mensaje.className = 'mensaje exito';
+  mensaje.textContent = '¡Bienvenido de nuevo! ✅';
+  setTimeout(() => cerrarModal('loginModal'), 1000);
+});
+
+// ==================== RECUPERAR CONTRASEÑA ====================
+document.getElementById('formRecuperar').addEventListener('submit', async e => {
+  e.preventDefault();
+  const mensaje = document.getElementById('recuperarMensaje');
+  const correo = document.getElementById('recuCorreo').value.trim().toLowerCase();
+  
+  const snapshot = await db.collection('usuarios').where('correo', '==', correo).get();
+  
+  if (snapshot.empty) {
+    mensaje.className = 'mensaje error';
+    mensaje.textContent = '⚠️ No existe una cuenta con ese correo';
+    return;
+  }
+  
+  mensaje.className = 'mensaje exito';
+  mensaje.innerHTML = '✅ Si tu correo está registrado, revisá tu bandeja de entrada.<br><small>(Demo: En producción se enviaría un correo real)</small>';
+});
+
+// ==================== PUBLICAR PRODUCTO ====================
+document.getElementById('formProducto').addEventListener('submit', async e => {
+  e.preventDefault();
+  
+  if (!usuarioActual) return;
+  
+  const datos = {
+    nombre: document.getElementById('prodNombre').value.trim(),
+    precio: document.getElementById('prodPrecio').value.trim(),
+    descripcion: document.getElementById('prodDescripcion').value.trim(),
+    categoria: document.getElementById('prodCategoria').value,
+    imagen: document.getElementById('prodImagen').value.trim() || '',
+    vendedorId: usuarioActual.id,
+    vendedorNombre: usuarioActual.nombre,
+    vendedorWhatsapp: usuarioActual.whatsapp,
+    fecha: new Date()
+  };
+  
+  await coleccionProductos.add(datos);
+  
+  e.target.reset();
+  alert('✅ ¡Producto publicado con éxito!');
+  cargarProductos();
+  cargarMisProductos();
+});
+
+// ==================== CARGAR PRODUCTOS ====================
+let todosLosProductos = [];
+
+async function cargarProductos() {
+  const grilla = document.getElementById('grillaProductos');
+  grilla.innerHTML = '<p style="text-align:center;color:var(--texto-claro)">Cargando productos...</p>';
+  
+  const snapshot = await coleccionProductos.orderBy('fecha', 'desc').get();
+  todosLosProductos = [];
+  
+  snapshot.forEach(doc => {
+    todosLosProductos.push({ id: doc.id, ...doc.data() });
+  });
+  
+  if (todosLosProductos.length === 0) {
+    grilla.innerHTML = '<p style="text-align:center;color:var(--texto-claro);grid-column:1/-1">Todavía no hay productos publicados. ¡Sé el primero en publicar! 🎉</p>';
+    return;
+  }
+  
+  renderizarProductos(todosLosProductos);
+}
+
+function renderizarProductos(lista) {
+  const grilla = document.getElementById('grillaProductos');
+  grilla.innerHTML = '';
+  
+  lista.forEach(item => {
+    const tarjeta = document.createElement('div');
+    tarjeta.className = 'tarjeta-item';
+    
+    const icono = item.imagen 
+      ? `<img src="${item.imagen}" alt="${item.nombre}" style="width:100%;height:120px;object-fit:cover">`
+      : `<div class="item-img">${getIconoCategoria(item.categoria)}</div>`;
+    
+    const mensaje = encodeURIComponent(`¡Hola! Vi tu publicación en Tucumán Comercial: *${item.nombre}* — Precio: ${item.precio}. Me interesa, ¿podemos hablar? 😊`);
+    const enlaceWhatsapp = `https://wa.me/${item.vendedorWhatsapp.replace(/\D/g,'')}?text=${mensaje}`;
+    
+    tarjeta.innerHTML = `
+      ${icono}
+      <div class="item-cuerpo">
+        <span style="font-size:.8rem;color:var(--texto-claro)">${item.categoria}</span>
+        <h3>${item.nombre}</h3>
+        <p class="item-precio">${item.precio}</p>
+        <p class="item-vendedor">👤 ${item.vendedorNombre}</p>
+        ${item.descripcion ? `<p style="font-size:.9rem;color:var(--texto-claro);margin-bottom:.8rem">${item.descripcion}</p>` : ''}
+        <div class="item-contacto">
+          <a href="${enlaceWhatsapp}" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+        </div>
+      </div>
+    `;
+    grilla.appendChild(tarjeta);
+  });
+}
+
+function getIconoCategoria(cat) {
+  const iconos = {
+    'Comida y Bebida': '🍕',
+    'Servicios': '🔧',
+    'Ropa y Calzado': '👕',
+    'Tecnología': '📱',
+    'Hogar': '🛋️',
+    'Otros': '📦',
+    'General': '🏷️'
+  };
+  return iconos[cat] || '🏷️';
+}
+
+function filtrarProductos() {
+  const busqueda = document.getElementById('buscarProducto').value.toLowerCase().trim();
+  if (!busqueda) {
+    renderizarProductos(todosLosProductos);
+    return;
+  }
+  const filtrados = todosLosProductos.filter(p =>
+    p.nombre.toLowerCase().includes(busqueda) ||
+    p.categoria.toLowerCase().includes(busqueda) ||
+    (p.descripcion && p.descripcion.toLowerCase().includes(busqueda))
+  );
+  renderizarProductos(filtrados);
+}
+
+// ==================== MIS PUBLICACIONES ====================
+async function cargarMisProductos() {
+  if (!usuarioActual) return;
+  
+  const lista = document.getElementById('listaMisProductos');
+  lista.innerHTML = '<p style="color:var(--texto-claro)">Cargando tus publicaciones...</p>';
+  
+  const snapshot = await coleccionProductos
+    .where('vendedorId', '==', usuarioActual.id)
+    .orderBy('fecha', 'desc')
+    .get();
+  
+  lista.innerHTML = '';
+  let tienePublicaciones = false;
+  
+  snapshot.forEach(doc => {
+    tienePublicaciones = true;
+    const prod = { id: doc.id, ...doc.data() };
+    const elemento = document.createElement('div');
+    elemento.className = 'tarjeta-producto';
+    elemento.innerHTML = `
+      <span class="producto-imagen">${getIconoCategoria(prod.categoria)}</span>
+      <div class="producto-info">
+        <h4>${prod.nombre}</h4>
+        <span class="precio">${prod.precio}</span>
+      </div>
+      <button class="btn btn-chico btn-rojo" onclick="eliminarProducto('${prod.id}')">🗑️</button>
+    `;
+    lista.appendChild(elemento);
+  });
+  
+  if (!tienePublicaciones) {
+    lista.innerHTML = '<p style="color:var(--texto-claro);font-style:italic">Todavía no publicaste ningún producto. ¡Publicá tu primero arriba! 🎉</p>';
+  }
+}
+
+async function eliminarProducto(id) {
+  if (!confirm('¿Estás seguro de querer eliminar esta publicación?')) return;
+  
+  await coleccionProductos.doc(id).delete();
+  cargarProductos();
+  cargarMisProductos();
+}
+
+// ==================== INICIO ====================
+recuperarSesion();
+</script>
+</body>
+</html>
+  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
